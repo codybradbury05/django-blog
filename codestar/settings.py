@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-j+rl6b)@ys591rqwi1(el(1k_qpp$@d9u_3)!ejm+9xw#!y5+v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-codybradbury-djangoblog-ln73etkt2ho.ws.codeinstitute-ide.net' , '.herokuapp.com']
 
@@ -92,7 +92,8 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
-    "https://8000-codybradbury-djangoblog-ln73etkt2ho.ws.codeinstitute-ide.net"
+    "https://8000-codybradbury-djangoblog-ln73etkt2ho.ws.codeinstitute-ide.net",
+    "https://django-blogcody-76faa66381aa.herokuapp.com/"
 ]
 
 # Password validation
