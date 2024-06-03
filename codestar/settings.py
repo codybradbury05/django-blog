@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-j+rl6b)@ys591rqwi1(el(1k_qpp$@d9u_3)!ejm+9xw#!y5+v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-codybradbury-djangoblog-ln73etkt2ho.ws.codeinstitute-ide.net' , '.herokuapp.com']
 
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("postgres://ujrzxhub3pf:AR3jorK8ahBv@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/pants_aqua_curse_32952"))
 }
 
 # Password validation
